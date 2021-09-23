@@ -21,12 +21,20 @@ public class Dash {
 	@Id
     @GeneratedValue   
    
-    private Long id;	
-
-    private Long prestarts;
+    private Long id;    
+	private Long prestarts;
     private Long comparisons;
     private Long prospects;
     private Long agentid;
+    private Long appsubmitted;
+    
+    
+    public Long getAppsubmitted() {
+		return appsubmitted;
+	}
+	public void setAppsubmitted(Long appsubmitted) {
+		this.appsubmitted = appsubmitted;
+	}
     
     
 

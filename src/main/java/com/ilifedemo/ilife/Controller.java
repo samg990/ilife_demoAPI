@@ -48,6 +48,7 @@ public class Controller {
         currentDash.setComparisons(dash.getComparisons());
         currentDash.setProspects(dash.getProspects());
         currentDash.setAgentid(dash.getAgentid());
+        currentDash.setAppsubmitted(dash.getAgentid());
         currentDash = dashRepository.save(dash);
 
         return ResponseEntity.ok(currentDash);

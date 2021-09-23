@@ -21,6 +21,7 @@ public class IlifeApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/dash").allowedOrigins("http://localhost:3000");
+				registry.addMapping("/dash/").allowedOrigins("http://localhost:3000");
 			}
 		};
 	}

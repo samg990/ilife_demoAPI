@@ -18,4 +18,10 @@ public class DataLoader implements CommandLineRunner {
 	public void run(String... strings) throws Exception { 
 		this.repository.save(new Dash());
 	}
+	
+	
+	
+	
+	
+	
 }

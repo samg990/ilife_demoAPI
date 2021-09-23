@@ -6,6 +6,7 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,7 +25,8 @@ public class Controller {
     public Controller(DashRepository dashRepository) {
         this.dashRepository = dashRepository;
     }
-
+    
+    @CrossOrigin(origins = "http://warm-journey-80079.herokuapp.com/dash")
     @GetMapping
     public List<Dash> getDashs() {
         return dashRepository.findAll();

@@ -26,7 +26,7 @@ public class Controller {
         this.dashRepository = dashRepository;
     }
     
-    @CrossOrigin(origins = "http://warm-journey-80079.herokuapp.com/dash")
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping
     public List<Dash> getDashs() {
         return dashRepository.findAll();

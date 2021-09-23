@@ -20,8 +20,8 @@ public class IlifeApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/dash").allowedOrigins("http://localhost:3000");
-				registry.addMapping("/dash/").allowedOrigins("http://localhost:3000");
+				registry.addMapping("/**").allowedOrigins("http://localhost:3000");
+				
 			}
 		};
 	}
